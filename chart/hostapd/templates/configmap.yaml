@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  hostapd.conf: |-
+    interface={{ .Values.hostapd.interface }}
+    bridge={{ .Values.hostapd.bridge }}
+    ssid={{ .Values.hostapd.ssid }}
+    driver=nl80211
+    country_code=DE
+    # Operation mode (a = IEEE 802.11a (5 GHz), b = IEEE 802.11b (2.4 GHz)
+    hw_mode=g
+    channel=7
+    wpa=2
+    auth_algs=1
+    wpa_pairwise=CCMP
+    wpa_key_mgmt=WPA-PSK
+    wpa_passphrase={{ .Values.hostapd.password }}
