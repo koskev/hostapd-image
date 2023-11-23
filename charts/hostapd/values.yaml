@@ -15,4 +15,12 @@ hostapd:
   interface: "wlan0"
   bridge: "wifi-bridge"
   ssid: "k8s-ap"
-  password: "cool_password"
+  wpa_passphrase: "cool_password"
+  driver: nl80211
+  country_code: DE
+  hw_mode: g
+  channel: 7
+  wpa: 2
+  auth_algs: 1
+  wpa_pairwise: CCMP
+  wpa_key_mgmt: WPA-PSK
