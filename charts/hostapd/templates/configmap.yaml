@@ -4,6 +4,6 @@ metadata:
   name: {{ .Release.Name }}-config
 data:
   hostapd.conf: |-
-  {{- range $name,$val := .Values.hostapd.extra_options }}
+  {{- range $name,$val := .Values.hostapd }}
     {{ $name }}={{ $val }}
   {{- end }}
