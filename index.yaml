@@ -3,6 +3,16 @@ entries:
   hostapd:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-11-25T00:04:24.523744079Z"
+    description: A Helm chart for Kubernetes
+    digest: 6c23acffcc78b6a2b18d771e1d0d8c626a81080f5f01379fd6650b0131a4ef42
+    name: hostapd
+    type: application
+    urls:
+    - https://github.com/koskev/hostapd-image/releases/download/hostapd-0.1.2/hostapd-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-11-23T22:54:14.094749695Z"
     description: A Helm chart for Kubernetes
     digest: 4235c1ff497ba3d9927401b9a1619a00a917d0e931cd90621e812d91e2bb02c2
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/koskev/hostapd-image/releases/download/hostapd-0.1.0/hostapd-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-23T22:54:14.0947579Z"
+generated: "2023-11-25T00:04:24.523759839Z"
