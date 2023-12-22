@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: hostapd-deployment
+  name: {{ .Release.Name }}-deployment
   namespace: default
   labels:
     app: hostapd
