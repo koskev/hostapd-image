@@ -8,8 +8,8 @@ image:
   tag: "2023.11.20"
 
 
-nodeSelector:
-  hostapd: "true"
+nodeSelector: {}
+#  hostapd: "true"
 
 hostapd:
   interface: "wlan0"
